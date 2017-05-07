@@ -1,0 +1,178 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Thomas}{Marchiori}
+\title{Web developer}                               % optional, remove / comment the line if not wanted
+\address{Via Francesco Oradini 4, Trento}{38121}{Italy}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+39~392~9722731}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{thomas.marchiori@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{www.linkedin.com/in/thomasmarchiori}                        % optional, remove / comment the line if not wanted
+%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+%\social[github]{jdoe}                              % optional, remove / comment the line if not wanted
+%\extrainfo{In compliance with the Italian legislative Decree no. 196 dated 30/06/2003, I hereby authorize you to use and process my personal details contained in this document.}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some comment}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}  % arguments 3 to 6 can be left empty
+\cventry{}{Bachelor degree in Computer Science}{Facoltà di Scienze Matematiche, Fisiche, Naturali}{Trento}{}{}
+
+\section{Technical skills}
+\cvitem{Programming languages}{Javascript, Node.js, Ruby on Rails, PHP and Java.}
+\cvitem{Web}{HTML, CSS, SCSS, Less, Grunt, Swagger}
+\cvitem{Programming skills}{MVC pattern, Agile Scrum, Extreme Programming, Test driven development, Api driven development}
+\cvitem{Database}{Relational Database (MySql, PostgresSql), noSql Database (MongoDB), in-memory Data structure store (Redis)}
+\cvitem{DevOps}{Linux Bash script, Continuous Integration and Continuous Delivery (Jenkins), Virtual machine tools (vagrant)}
+\cvitem{Networking}{Basic knowledge of computer networking}
+\cvitem{Mobile and Desktop Apps}{Ionic, Cordova and Electron}
+\cvitem{Graphic}{Adobe Photoshop, Affinity photo, Adobe Illustrator for mockups or icons}
+\cvitem{Teamwork}{Great predisposition to teamwork, great team spirit and ability to adapt}
+
+\section{Experience}
+%\subsection{Vocational}
+\cventry{November 2015--Present}{Web Developer}{Movalia S.R.L.}{Trento}{}{\textit{Movalia, operating in Trento since September 2015, produce software and complements FAMAS SYSTEM SPA, a strong and experienced company in the field of ITS (Intelligent Transport Systems).}\newline{}%
+Detailed achievements:%
+\begin{itemize}%
+\item Working in one Agile multifunctional team, following the Scrum framework and DevOps practice.
+\item I am following the design, the develop and the maintenance of a SaaS Automatic Vehicle Locator (AVL) from the beginning of the concept until the release and the post production following the TDD practice and the Extreme Programming technique.
+\item During the development of this system the team use an Angular.js application using Leaflet as map library, and d3.js for graphical representation of the informations.
+\item For retrieving information we use a set of backend modules,
+developed in Hapi.js and Spring (Java), with particular attention to follow an API driven design using Swagger.
+\item For data storage we use PostgresSQL as relational DB, MongoDB as a noSQL database, Redis as an in memory data structure cache.
+\item This project relays on an On board unit software to be installed on the vehicles to be monitored.
+\item We adopt Jenkis as continuous integration and continuous delivery server.
+\end{itemize}}
+\cventry{December 2013--October 2015}{Web Developer}{Futur3 S.R.L.}{Trento}{}{\textit{Futur3 is a leader society in providing free Wi-Fi in Italy.}\newline{}%
+Detailed achievements:%
+\begin{itemize}%
+\item Maintenance and develop of new features for the application for configuring the HotSpots and the proximity marketing based on Ruby on Rails.
+\item Design and develop of the application for the activation of the HotSpot on Node.js (Express.js).
+  %\begin{itemize}%
+  %\item Sub-achievement (a);
+  %\item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+    %\begin{itemize}
+    %\item Sub-sub-achievement i;
+    %\item Sub-sub-achievement ii;
+    %\item Sub-sub-achievement iii;
+    %\end{itemize}
+  %\item Sub-achievement (c);
+  %\end{itemize}
+\item Design and develop of the api rest server (koa.js) and the mobile app (Ionic) for the configuration of more than 4000 HotSpots dislocated in whole Italy.
+\item Collaboration and technical mediation with important companies like Seat Pagine Gialle Italia, la Feltrinelli, Mondadori, Mediamarket, CheBanca!.
+\end{itemize}}
+\cventry{August 2013--November 2013}{Software Developer}{Gruppo Editoriale Trentino S.R.L.}{Trento}{}{\textit{G.E.T. (TrentinoTV) produces information and programs in its editorial offices in Trento and Bolzano.}\newline{}%
+Detailed achievements:%
+\begin{itemize}%
+\item Design, develop and maintenance of a web application for the lecture of the news.
+\item Develop of new features for the Digital Signage software used in many totem located in the province of Trento.
+\item Develop of new features for the society website in PHP.
+\end{itemize}}
+\cventry{March 2013--July 2013}{Web Developer}{Studio Informatico Ing. Simone Zanella}{Imperia}{}{\textit{Development of website, e-commerce, pc and Mac assistance, hosting, domain reseller.}\newline{}%
+Detailed achievements:%
+\begin{itemize}%
+\item Develop and maintenance of website in PHP.
+\item Use of Parallels Plesk Panel for the management of various web hostings.
+\end{itemize}}
+\cventry{July 2012--December 2012}{Software Developer}{Antincendi Fulmix S.A.S.}{Trento}{}{\textit{The company is specialized in fire-fighting equipment with more than forty years experience.}\newline{}%
+Detailed achievements:%
+\begin{itemize}%
+\item Design and Develop a JAVA application for help the firefighters or forest rangers for hydraulic calculations for managing one or more motorpump displayed on a relief map.
+\item Layout and creation of brochures and advertising signs.
+\end{itemize}}
+
+\section{Languages}
+\cvitem{Italian}{Mother tongue}
+\cvitem{English}{Fluent}
+
+%\section{Computer skills}
+%\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+%\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+%\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
+\section{Interests and Hobbies}
+\cvitem{}{Passionate about pc and mobile technologies, I love to keep myself up to date with daily updates.}
+\cvitem{}{I like to ride my mountain bike and my racing bike in my free time, I follow a spinning course during the winter months.}
+
+\vfill
+\textit{In compliance with the Italian legislative Decree no. 196 dated 30/06/2003, I hereby authorize you to use and process my personal details contained in this document.}
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+%\section{References}
+%\begin{cvcolumns}
+%  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
